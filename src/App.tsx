@@ -61,11 +61,11 @@ export default function App() {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center">
-            <div className="flex items-center gap-[5px] transition-all duration-300">
-              <div className="w-14 h-14 lg:w-16 lg:h-16 flex items-center justify-center">
+            <div className="flex items-center gap-0 transition-all duration-300">
+              <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center relative z-10">
                 <img src="/pingu-images/pingu-logo-1.webp" alt="Pingu Circular Logo" className="w-full h-full object-contain drop-shadow-md m-0 p-0" style={{ margin: 0, padding: 0 }} />
               </div>
-              <div className="w-20 h-10 lg:w-28 lg:h-14 flex items-center justify-center">
+              <div className="w-24 h-12 lg:w-32 lg:h-16 flex items-center justify-center relative z-20 -ml-2 lg:-ml-4">
                 <img src="/pingu-images/pingu-logo-2.webp" alt="Pingu Text Logo" className="w-full h-full object-contain drop-shadow-md m-0 p-0" style={{ margin: 0, padding: 0 }} />
               </div>
             </div>
