@@ -1,33 +1,62 @@
-import { Bird, Quote } from 'lucide-react';
+import { Quote } from 'lucide-react';
 import { memo } from 'react';
 
 const AboutSection = memo(function AboutSection({ t }: { t: any }) {
   return (
     <section id="about" className="py-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="grid lg:grid-cols-2 gap-20 items-start mb-32">
-          <div className="space-y-12">
+        {/* History Row */}
+        <div className="grid lg:grid-cols-2 gap-20 items-center mb-24">
+          <div className="order-2 lg:order-1">
             <div className="border-l-8 border-pingu-purple pl-8">
               <h3 className="text-4xl text-pingu-purple mb-6">{t.about.historyTitle}</h3>
               <p className="text-lg leading-relaxed text-slate-600 font-medium">{t.about.historyText}</p>
             </div>
-            <div className="border-l-8 border-pingu-blue pl-8">
-              <h3 className="text-4xl text-pingu-blue mb-6">{t.about.schoolTitle}</h3>
-              <p className="text-lg leading-relaxed text-slate-600 font-medium">{t.about.schoolText}</p>
-            </div>
           </div>
-          <div className="relative">
+          <div className="relative order-1 lg:order-2">
             <div className="aspect-[4/3] rounded-[4rem] overflow-hidden shadow-2xl border-[12px] border-pingu-bg">
               <img 
                 src="./pingu-images/pingu-banner-1.webp" 
                 className="w-full h-full object-cover" 
-                alt="School Life" 
+                alt="History" 
                 loading="lazy"
                 decoding="async"
               />
             </div>
-            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-white rounded-full flex items-center justify-center p-6 shadow-xl border-4 border-pingu-purple animate-float">
-              <Bird className="w-full h-full text-pingu-purple" aria-hidden="true" />
+            <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-pingu-logo-blue rounded-full flex items-center justify-center overflow-hidden shadow-xl border-4 border-pingu-purple animate-float">
+              <img 
+                src="./pingu-images/Pingu-about-icon.webp" 
+                alt="Pingu" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* School Row */}
+        <div className="grid lg:grid-cols-2 gap-20 items-center mb-32">
+          <div className="relative order-1 lg:order-1">
+            <div className="aspect-[4/3] rounded-[4rem] overflow-hidden shadow-2xl border-[12px] border-pingu-bg">
+              <img 
+                src="./pingu-images/pingu-banner-2.webp" 
+                className="w-full h-full object-cover" 
+                alt="School Activities" 
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div className="absolute -bottom-10 -right-10 w-32 h-32 bg-pingu-logo-blue rounded-full flex items-center justify-center overflow-hidden shadow-xl border-4 border-pingu-blue animate-float" style={{ animationDelay: '1s' }}>
+              <img 
+                src="./pingu-images/Pingu-about-icon.webp" 
+                alt="Pingu" 
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="order-2 lg:order-2">
+            <div className="border-l-8 border-pingu-blue pl-8">
+              <h3 className="text-4xl text-pingu-blue mb-6">{t.about.schoolTitle}</h3>
+              <p className="text-lg leading-relaxed text-slate-600 font-medium">{t.about.schoolText}</p>
             </div>
           </div>
         </div>

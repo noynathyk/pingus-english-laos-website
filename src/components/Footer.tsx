@@ -41,7 +41,7 @@ const Footer = memo(function Footer({ t }: { t: any }) {
                 </div>
                 <div>
                   <h4 className="text-3xl leading-none uppercase">Pingu's <span className="text-pingu-blue">English</span></h4>
-                  <p className="text-xs uppercase tracking-widest text-slate-500 font-bold mt-2">Vientiane Official School</p>
+
                 </div>
               </div>
               <p className="text-lg text-slate-400 font-semibold leading-relaxed max-w-sm italic mb-8">"{t.footer.tagline}"</p>
@@ -66,7 +66,7 @@ const Footer = memo(function Footer({ t }: { t: any }) {
               <div className="flex flex-col gap-4 font-bold text-slate-500">
                 <a href="https://www.facebook.com/pingusenglishlaos" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Facebook</a>
                 <a href="https://www.instagram.com/pingusenglish.laos?igsh=MXJ6cjM0ZHcyNW8ycQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">Instagram</a>
-                <a href="https://www.youtube.com/@pingusenglish" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a>
+                <a href="https://www.youtube.com/@pingusenglishlaos?si=o-M2m7-H-Ad_sD03" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">YouTube</a>
                 <a href={t.footer.tiktok || "https://www.tiktok.com/@pingulaos"} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">TikTok</a>
               </div>
             </nav>

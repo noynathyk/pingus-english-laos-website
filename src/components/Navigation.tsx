@@ -39,14 +39,14 @@ export default function Navigation({ lang, toggleLang, t }: NavigationProps) {
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center">
-            <div className="flex items-center gap-0 transition-all duration-300">
+            <a href="#" aria-label="Home" className="flex items-center gap-0 transition-all duration-300 hover:opacity-80">
               <div className="w-16 h-16 lg:w-20 lg:h-20 flex items-center justify-center relative z-10">
                 <img src="./pingu-images/pingu-logo-1.webp" alt="Pingu Circular Logo" className="w-full h-full object-contain drop-shadow-md m-0 p-0" style={{ margin: 0, padding: 0 }} />
               </div>
               <div className="w-24 h-12 lg:w-32 lg:h-16 flex items-center justify-center relative z-20 -ml-2 lg:-ml-4">
                 <img src="./pingu-images/pingu-logo-2.webp" alt="Pingu Text Logo" className="w-full h-full object-contain drop-shadow-md m-0 p-0" style={{ margin: 0, padding: 0 }} />
               </div>
-            </div>
+            </a>
           </div>
 
           <div className="hidden lg:flex items-center gap-6">
@@ -67,7 +67,7 @@ export default function Navigation({ lang, toggleLang, t }: NavigationProps) {
                 }`}
             >
               <Globe className="w-3.5 h-3.5" aria-hidden="true" />
-              {lang === 'en' ? 'ພາສາລາວ' : 'ENGLISH'}
+              {lang === 'en' ? <span className="font-lao tracking-normal font-bold">ພາສາລາວ</span> : 'ENGLISH'}
             </button>
           </div>
 
@@ -114,7 +114,7 @@ export default function Navigation({ lang, toggleLang, t }: NavigationProps) {
                 aria-label="Toggle Language Mobile"
                 className="mt-8 px-10 py-4 rounded-full border-2 border-white font-black uppercase text-xl"
               >
-                {lang === 'en' ? 'ພາສາລາວ' : 'English'}
+                {lang === 'en' ? <span className="font-lao tracking-normal font-bold">ພາສາລາວ</span> : 'English'}
               </button>
             </div>
           </motion.div>

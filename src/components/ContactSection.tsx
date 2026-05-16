@@ -58,7 +58,7 @@ const ContactSection = memo(function ContactSection({ t }: { t: any }) {
                 <Instagram aria-hidden="true" />
               </a>
               <a
-                href="https://www.youtube.com/@pingusenglish"
+                href="https://www.youtube.com/@pingusenglishlaos?si=o-M2m7-H-Ad_sD03"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"

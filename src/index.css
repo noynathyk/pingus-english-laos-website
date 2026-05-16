@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Noto+Sans+Lao:wght@400;600;700&family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Noto+Sans+Lao:wght@400;600;700&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "VAG Rounded", "Varela Round", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Boogaloo", cursive;
+  --font-display: "VAG Rounded", "Varela Round", ui-sans-serif, system-ui, sans-serif;
   --font-lao: "Noto Sans Lao", sans-serif;
   
   --color-pingu-purple: #A92793;
   --color-pingu-blue: #079FC3;
   --color-pingu-blue-light: #B4E3F0;
+  --color-pingu-logo-blue: #64CFF7;
   --color-pingu-bg: #E7F8FE;
   
   --animate-float: float 5s ease-in-out infinite;
@@ -20,11 +21,16 @@
   }
   
   h1, h2, h3, h4 {
-    @apply font-display tracking-wide;
+    @apply font-display font-bold tracking-wide;
   }
 
-  .lang-lo, .lang-lo h1, .lang-lo h2, .lang-lo h3, .lang-lo h4 {
-    @apply font-lao tracking-normal;
+  .lang-lo, .lang-lo h1, .lang-lo h2, .lang-lo h3, .lang-lo h4,
+  .lang-lo .font-display, .lang-lo .font-sans {
+    font-family: var(--font-lao) !important;
+  }
+
+  .lang-lo h1, .lang-lo h2, .lang-lo h3, .lang-lo h4 {
+    @apply font-bold tracking-normal;
   }
 
   /* Force normal tracking for Lao language since wide letter-spacing breaks Lao text combining characters */
