@@ -26,6 +26,11 @@
   .lang-lo, .lang-lo h1, .lang-lo h2, .lang-lo h3, .lang-lo h4 {
     @apply font-lao tracking-normal;
   }
+
+  /* Force normal tracking for Lao language since wide letter-spacing breaks Lao text combining characters */
+  .lang-lo [class*="tracking-"] {
+    letter-spacing: normal !important;
+  }
 }
 
 @keyframes float {
