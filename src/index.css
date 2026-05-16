@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Serif+Lao:wght@400;600;700&family=Boogaloo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Noto+Sans+Lao:wght@400;600;700&family=Boogaloo&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "VAG Rounded", "Varela Round", ui-sans-serif, system-ui, sans-serif;
   --font-display: "Boogaloo", cursive;
-  --font-lao: "Noto Serif Lao", serif;
+  --font-lao: "Noto Sans Lao", sans-serif;
   
   --color-pingu-purple: #A92793;
   --color-pingu-blue: #079FC3;
@@ -21,6 +21,10 @@
   
   h1, h2, h3, h4 {
     @apply font-display tracking-wide;
+  }
+
+  .lang-lo, .lang-lo h1, .lang-lo h2, .lang-lo h3, .lang-lo h4 {
+    @apply font-lao tracking-normal;
   }
 }
 
