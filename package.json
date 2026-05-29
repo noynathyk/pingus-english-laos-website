@@ -10,7 +10,7 @@
     "preview": "vite preview",
     "clean": "rm -rf dist",
     "lint": "tsc --noEmit",
-    "predeploy": "npm run build",
+    "predeploy": "vite build --base=/pge-website-demo/",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
