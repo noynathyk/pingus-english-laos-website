@@ -25,7 +25,7 @@ jobs:
       - name: Build application
         run: npm run build
         env:
-          VITE_BASE_URL: /pingus-english-laos-website/
+          VITE_BASE_PATH: /pingus-english-laos-website/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
