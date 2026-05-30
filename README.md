@@ -1,20 +1,22 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Pingu's English Laos
 
-# Run and deploy your AI Studio app
+This is the main repository for the Pingu's English Laos website (Version 1.0).
 
-This contains everything you need to run your app locally.
+## Project Overview
 
-View your app in AI Studio: https://ai.studio/apps/7cd57f35-201d-4f3c-b8fb-20c016ddf3ec
+Pingu's English is a high-quality kindergarten and English language program for young children. This project is a modern, responsive web application built with React, Vite, Tailwind CSS, and TypeScript.
 
-## Run Locally
+## Documentation
 
-**Prerequisites:**  Node.js
+Comprehensive project documentation is available in the `docs/` directory:
 
+- [Architecture Overview](docs/ARCHITECTURE.md)
+- [Deployment Guide](docs/DEPLOYMENT.md)
+- [Security Guidelines](docs/SECURITY.md)
+- [Migration Report](docs/MIGRATION_REPORT.md)
+- [Release Notes](docs/RELEASES.md)
+- [Changelog](docs/CHANGELOG.md)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Development Workflow
+
+This project strictly follows the Antigravity -> GitHub -> CloudCannon deployment flow. For detailed instructions on running the site locally or deploying to UAT/Production, please refer to the `docs/DEPLOYMENT.md` file.
