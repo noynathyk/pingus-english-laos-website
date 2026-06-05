@@ -72,7 +72,7 @@ const AboutSection = memo(function AboutSection({ t }: { t: any }) {
             <img
               src="./pingu-images/ping-ceo-message.webp"
               className="absolute inset-0 w-full h-full object-cover object-top"
-              alt={t.about.directorName || "Director"}
+              alt={t.about.directorName || "CEO"}
               loading="lazy"
               decoding="async"
             />
